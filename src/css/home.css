@@ -1,0 +1,8 @@
+.HomeContainer{
+    width: 100%;
+    /* align-items: stretch; */
+    flex-grow: 1;
+}
+.herocontainer{
+    width: 100%;
+}
