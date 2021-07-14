@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/hero.css'
 function Hero() {
     return (
-        <div>
+        <>
         <div class="hero-section">
             <div class="hero-section-text">
                 <h1>Welcome</h1>
@@ -10,7 +10,7 @@ function Hero() {
             </div>
         </div>
             
-        </div>
+        </>
     )
 }
 

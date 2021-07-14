@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+.HomeHerocontainer{
+    padding-top: 40px;
+    background: #8C2425;
+    display: flex;
+    width: 100%;
+    align-items:center;
+    height: 80vh;
+}
+.textbox{
+    height: 100%;
+    justify-content: center;
+    flex-basis: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-text{
+    font-family: 'Gabriela';
+    font-size: 2rem;
+    color: #F6E7A1;
+    justify-content: center;
+    width: 25rem;
+    margin-bottom: 25%;
+}
+.herobutton{
+    font-family: 'Gabriela';
+    font-size: 1.25rem;
+    background: #F6E7A1;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    width: 20rem;
+    cursor: pointer;
+    
+}
+
+.laptop{
+    display: flex;
+    max-height: 600px;
+    z-index: 12;
+}

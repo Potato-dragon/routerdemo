@@ -1,4 +1,4 @@
-/* Primary: 01cbd7
+ /* Primary: 01cbd7
 Sec: e9262c
 Ter: 8c2425
 O1: 1d1d1d
@@ -9,7 +9,7 @@ O2: a87981 */
 .card-list {
     z-index: 1;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 3rem;
     overflow-x: scroll;
     background-color:#201c29

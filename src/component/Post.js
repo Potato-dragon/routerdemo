@@ -4,7 +4,7 @@ import '../css/post.css'
 
 const Post = () => {
     return (
-        <div>
+        <>
             <article class="card">
         <header class="card-header">
           <p>Sep 11th 2020</p>
@@ -29,7 +29,7 @@ const Post = () => {
           <a href="#">css</a>
         </div>
       </article>
-        </div>
+        </>
     )
 }
 

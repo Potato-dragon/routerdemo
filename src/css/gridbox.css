@@ -1,0 +1,16 @@
+.gridcontainer{
+    background-image: url(../img/post3.jpg);
+    height: 300px;
+    padding-top:40px ;
+    border-radius: 15px;
+}
+.gridtxt2{
+    font-size: 1rem;
+    font-family: 'Gabriela';
+}
+.learnmore{
+    background-color: rgba(0, 255, 255, 0.212);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+}

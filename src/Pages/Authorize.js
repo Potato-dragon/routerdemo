@@ -45,13 +45,13 @@ export const SignIn=()=> {
     console.log(provider);
   }
   return (
-    <button onClick={signInWithGoogle}>Sign in with Google</button>
+    <button className='SignIn-btn' onClick={signInWithGoogle}>Sign in with Google</button>
   )
   
 }
 export const SignOut=()=> {
   return auth.currentUser &&(
-    <button onClick={()=>auth.signOut( )}>SignOut</button>
+    <button className='SignIn-btn' onClick={()=>auth.signOut( )}>SignOut</button>
   )
   
 }

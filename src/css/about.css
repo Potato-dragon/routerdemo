@@ -1,0 +1,86 @@
+.aboutcontainer{
+    width:100%;
+}
+.bodycontainer{
+    display: grid;
+    grid-template-columns: repeat(11 ,1fr);
+}
+.photocontainer{
+    grid-column-start: 2;
+    grid-column-end: 5 ;
+}
+.textcontainer{
+    grid-column-start: 7;
+    grid-column-end: 11 ;
+}
+.dpphoto{
+    border-radius: 25px;
+}
+.aboutme{
+    font-family: 'Gabriela';
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+    color: black;
+}
+.texcontainer1{
+    align-items: center;
+    background-color: #c4c4c4;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.texcontainer2{
+    background-color: #c4c4c4;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.tex1{
+    height: 150px;
+}
+.tex2{
+    height: 150px;
+
+}
+.sec2{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+}
+.txtcontainer2{
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.pixcontainer2{
+    grid-column-start: 7;
+    grid-column-end: 12 ;
+}
+.intro{
+    font-family: 'Gabriela';
+    font-size: 4rem;
+    letter-spacing: 3px;
+    color: #c4c4c4;
+
+}
+.into{
+    font-family: 'Gabriela';
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #000;
+}
+.train{
+    height: 650px;
+}
+.lastparacontainer{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+
+}
+.lastpara{
+    grid-column-start: 2;
+    grid-column-end: 11;
+    font-family: 'Gabriela';
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #000;
+}

@@ -10,6 +10,7 @@ import Post from './component/Post';
 import Blog from './Pages/Blog';
 import Hero from './component/Hero';
 import Authorize from './Pages/Authorize';
+import Gridbox from './component/Gridbox';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <Route path='/Blog' component={Blog}/>
     <Route path='/Hero' component={Hero}/>
     <Route path='/Authorize' component={Authorize}/>
+    <Route path='/Gridbox' component={Gridbox}/>
 
     <Route  component={NotFound}/>
       </Switch>
