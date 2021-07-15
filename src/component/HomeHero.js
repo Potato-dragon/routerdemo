@@ -9,7 +9,7 @@ function HomeHero() {
             <div className="textbox">
                 <h2 className="title-text">All the right moves,
 In all the right places.</h2>
-                <button className="herobutton">Subscribe to the newsletter</button>
+                <button className="herobutton" href='#'>Subscribe to the newsletter</button>
 
             </div>
             <div className="imgbox">

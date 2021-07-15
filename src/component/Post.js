@@ -25,8 +25,8 @@ const Post = () => {
           </div>
         </div>
         <div class="tags">
-          <a href="#">html</a>
-          <a href="#">css</a>
+          <a href="/blog">html</a>
+          <a href="/blog">css</a>
         </div>
       </article>
         </>
