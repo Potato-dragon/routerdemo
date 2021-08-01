@@ -1,30 +1,45 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 import Avatar from '../img/avatar.png'
 import '../css/post.css'
 
-const Post = () => {
+const Post = ( {id}) => {
+  const [data, setData] = useState([]);
+
+useEffect(()=>{
+  loadData();
+},[]);
+
+const loadData=()=>{
+  fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+  .then((response) => response.json())
+  .then(data => setData(data));
+  console.log(data);
+}
+
     return (
         <>
             <article class="card">
-        <header class="card-header">
-          <p>Sep 11th 2020</p>
-          <h2>Card Tricks are fun!</h2>
+        <header className="card-header">
+          <div>{data.title}</div>
+          <div>{data.body}</div>
+         
         </header>
 
-        <div class="card-author">
-          <a class="author-avatar" href=" #">
+        <div className="card-author">
+          <a className="author-avatar" href=" #">
             <img src={Avatar} alt='sorry 🤷‍♂️' />
           </a>
-          <svg class="half-circle" viewBox="0 0 106 57">
+          <svg className="half-circle" viewBox="0 0 106 57">
             <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
           </svg>
 
-          <div class="author-name">
-            <div class="author-name-prefix">Pirate</div>
+          <div className="author-name">
+            <div className="author-name-prefix">Pirate</div>
             William Kidd
           </div>
         </div>
-        <div class="tags">
+        <div className="tags">
           <a href="/blog">html</a>
           <a href="/blog">css</a>
         </div>
