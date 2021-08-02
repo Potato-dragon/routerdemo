@@ -2,26 +2,40 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import Avatar from '../img/avatar.png'
 import '../css/post.css'
+import { Link } from 'react-router-dom';
 
 const Post = ( {id}) => {
   const [data, setData] = useState([]);
+  const [user, setUser]= useState([]);
 
 useEffect(()=>{
   loadData();
-},[]);
+},[ ]);
+
+useEffect(()=>{
+  fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+  .then((response) => response.json())
+  .then(user => setUser(user));
+  console.log(data);
+},[])
 
 const loadData=()=>{
   fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
   .then((response) => response.json())
   .then(data => setData(data));
-  console.log(data);
 }
 
     return (
         <>
-            <article class="card">
+            <Link to='/' style={{
+              color: 'white'
+            }} >
+            <article class="card" onClick={(e)=>{
+              
+              
+            }}>
         <header className="card-header">
-          <div>{data.title}</div>
+          <h2>{data.title}</h2>
           <div>{data.body}</div>
          
         </header>
@@ -35,8 +49,8 @@ const loadData=()=>{
           </svg>
 
           <div className="author-name">
-            <div className="author-name-prefix">Pirate</div>
-            William Kidd
+            <div className="author-name-prefix">{user.name}</div>
+            {user.email}
           </div>
         </div>
         <div className="tags">
@@ -44,6 +58,7 @@ const loadData=()=>{
           <a href="/blog">css</a>
         </div>
       </article>
+      </Link>
         </>
     )
 }

@@ -10,11 +10,11 @@ function Blog() {
         <div className="container">
             <Hero />
         <div className='card-list'>
-            <Post id='1'>Example</Post>
-            <Post id='2'>Example</Post>
-            <Post id='3'>Example</Post>
-            <Post id='4'>Example</Post>
-            <Post id='5'>Example</Post>
+            <Post id='1'></Post>
+            <Post id='2'></Post>
+            <Post id='3'></Post>
+            <Post id='4'></Post>
+            <Post id='5'></Post>
             
         </div>
         </div>
